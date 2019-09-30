@@ -13,7 +13,7 @@ Summarized upcomming features:
 
 GUI-Features:
 -> package presentation
--> create class InputFrame
+-> create class GUIForm
    fields: account, toAccount 
            amount 
            revenue | expenditure
