@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="886.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/8.0.171">
+    <center>
+        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox prefHeight="23.0" prefWidth="1010.0">
+                    <children>
+                        <Region prefHeight="31.0" prefWidth="773.0">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                            </HBox.margin>
+                            <padding>
+                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+                            </padding>
+                        </Region>
+                        <TextField>
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                            </HBox.margin>
+                            <padding>
+                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+                            </padding>
+                        </TextField>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="31.0"
+                                prefWidth="56.0" text="Filter">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                            </HBox.margin>
+                            <padding>
+                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+                            </padding>
+                        </Button>
+                    </children>
+                </HBox>
+                <TableView prefHeight="254.0" prefWidth="968.0" tableMenuButtonVisible="true">
+                    <columns>
+                        <TableColumn prefWidth="177.0" text="Datum"/>
+                        <TableColumn minWidth="0.0" prefWidth="187.0" text="Geldfluss"/>
+                        <TableColumn prefWidth="256.0" text="Art"/>
+                        <TableColumn minWidth="0.0" prefWidth="358.0" text="Beschreibuung"/>
+                    </columns>
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </VBox.margin>
+                    <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+                    </padding>
+                </TableView>
+                <HBox prefHeight="16.0" prefWidth="1010.0">
+                    <children>
+                        <TextField alignment="CENTER" prefHeight="31.0" prefWidth="140.0">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                            </HBox.margin>
+                            <padding>
+                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+                            </padding>
+                        </TextField>
+                        <TextField layoutX="10.0" layoutY="10.0" prefHeight="31.0" prefWidth="202.0">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                            </HBox.margin>
+                            <padding>
+                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+                            </padding>
+                        </TextField>
+                        <ComboBox prefHeight="35.0" prefWidth="204.0">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                            </HBox.margin>
+                            <padding>
+                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+                            </padding>
+                        </ComboBox>
+                        <TextField layoutX="197.0" layoutY="10.0" prefHeight="31.0" prefWidth="356.0">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                            </HBox.margin>
+                            <padding>
+                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+                            </padding>
+                        </TextField>
+                        <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="55.0" text="OK">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                            </HBox.margin>
+                            <padding>
+                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+                            </padding>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </center>
+    <top>
+        <VBox prefHeight="106.0" prefWidth="1010.0" BorderPane.alignment="CENTER">
+            <children>
+                <MenuBar>
+                    <menus>
+                        <Menu mnemonicParsing="false" text="File">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Close"/>
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Edit">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Delete"/>
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Help">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="About"/>
+                            </items>
+                        </Menu>
+                    </menus>
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </VBox.margin>
+                    <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+                    </padding>
+                </MenuBar>
+                <Label alignment="CENTER" prefHeight="153.0" prefWidth="1010.0" text="Moneystream">
+                    <font>
+                        <Font size="48.0"/>
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </VBox.margin>
+                    <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+                    </padding>
+                </Label>
+            </children>
+        </VBox>
+    </top>
+    <bottom>
+        <PieChart BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </BorderPane.margin>
+            <padding>
+                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+            </padding>
+        </PieChart>
+    </bottom>
+</BorderPane>
